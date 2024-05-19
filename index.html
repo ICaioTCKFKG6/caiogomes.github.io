@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio de Caio Gomes</title>
   <style>
+    /* Estilização da coluna lateral */
     .coluna-lateral
     {
       background-color: #f0f0f0;
@@ -16,7 +17,8 @@
       margin-top: 25px;
       margin-left: 10px;
     }
-    
+
+    /* Estilização da caixa texto */
     .caixa-texto 
     {
       background-color: #f0f0f0;
@@ -25,34 +27,40 @@
       border-radius: 3px;
       text-align: center;
       width: 60%;
-      margin: 0 auto;
+      margin: 0 auto; /* Centralização horizontal da caixa texto */
     }
 
+    /* Estilização dos links da coluna lateral */
     .coluna-lateral a 
     {
       display: block;
       color: green;
       font-size: 17px;
       font-weight: bold;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s; /* Transição de cor de fundo */
       margin-bottom: 5px;
       padding-left: 8px
     }
 
+    /* Estilização dos links quando houver hover */
     .coluna-lateral a:hover
     {
-      background-color: #ddd;
-      font-size: 18px;
+      background-color: #ddd; /* Cor de fundo */
+      font-size: 18px; /* Aumento do tamanho da fonte */
     }
   </style>
 </head>
 <body>
+  <!-- Título da página -->
   <h1 style="text-align: center;">Introdução</h1>
+  <!-- Caixa de texto -->
   <div class="caixa-texto">
     <p>Este site é um projeto da Disciplina de Ferramentas de Desenvolvimento Web, onde elaboro um site contendo algumas informações sobre mim. Cada link abaixo levará para uma categoria diferente.</p>
   </div>
+  <!-- Coluna lateral com os links para as demais páginas -->
   <div class="coluna-lateral">
     <ul>
+      <!-- Lista de links -->
       <li><a href="sobremim.html">Sobre mim</a></li>
       <li><a href="formacao.html">Formação acadêmica</a></li>
       <li><a href="portfolio.html">Portfólio</a></li>
