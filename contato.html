@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Entre em contato</title>
   <style>
+    /* Estilização do formulário */
     form
     {
       display: flex;
@@ -13,23 +14,26 @@
       align-items: flex-start;
     }
 
+    /* Estilização das labels */
     label
     {
       display: inline-block;
-      width: 200px;
+      width: 200px; /* Definição da largura das labels */
       font-weight: bold;
     }
 
+    /* Estilização da caixa de texto e da área do texto */
     input[type="text"],
     input[type="email"],
     textarea
     {
-      width: calc(100-200px);
+      width: calc(100-200px); /* Calculo da largura da caixa de texto */
       padding: 5px;
       margin-bottom: 10px;
-      vertical-align: top;
+      vertical-align: top; /* Alinha o texto com o topo da caixa de texto */
     }
 
+    /* configuração do tamanho do botão Enviar */
     button
     {
       width: 100px;
@@ -39,19 +43,24 @@
 <body>
   <h1>Contato</h1>
   <p>Preencha o formulário abaixo para entrar em contato</p>
+  <!-- Formulário para envio da mensagem -->
   <form action="/enviar" method="post">
+    <!-- Campo nome -->
     <div>
       <label for="nome"><strong>Nome:</strong></label>
       <input type="text" id="nome" name="nome" required>
     </div>
+    <!-- Campo e-mail -->
     <div>
       <label for="email"><strong>E-mail:</strong></label>
       <input type="email" id="email" name="email" required>
     </div>
+    <!-- Campo mensagem -->
     <div>
       <label for="mensagem"><strong>Digite sua mensagem:</strong></label>
       <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
     </div>
+    <!-- Botão de envio do formulário -->
     <button type="submit">Enviar</button>
   </form>
 </body>
